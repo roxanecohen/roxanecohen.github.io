@@ -1,10 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>Roxane Cohen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #94a3b8;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #64748b;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my personal site 🚀</p>
+
+  <!-- HERO -->
+  <header>
+    <h1>Roxane Cohen</h1>
+    <p>AI Researcher </p>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#news">News & Upcoming</a>
+    <a href="#projects">Conferences & Presentations </a>
+    <a href="#blog">Academic</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi there! I'm an AI researcher. I've defended my PhD in November 2025, on the subject : "Analyzing binary programs and obfuscation with graph-based representations and machine learning".
+      My research topics include (but are not limited to): graphs & graph representation learning, with a focus on cybersecurity applications, especially reverse-engineering, obfuscation, binary analysis, program synthesis.
+      But I'm also a big fan of more general AI research topics ; such as weak signals analysis, fusion of multi-types and complex data, anomaly detection, social networks analysis, fraud detection intelligence, everything linked to 
+      drones, aircrafts and so on.
+
+      If you're interested to discuss on these topics, please reach out !
+    </p>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <h2>News & Upcoming</h2>
+
+    <div class="card">
+      <strong>March 2026</strong>
+      <p>Started a new project on XYZ.</p>
+    </div>
+
+    <div class="card">
+      <strong>February 2026</strong>
+      <p>Presented at ABC conference.</p>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Project One</h3>
+      <p>Short description of your project.</p>
+      <a href="#">View project</a>
+    </div>
+
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Another cool thing you built.</p>
+    </div>
+
+  </section>
+
+  <!-- ACADEMIC -->
+  <section id="academic">
+    <h2>Academic</h2>
+
+    <div class="card">
+      <p><strong>Conference 2026</strong> – Paper on XYZ</p>
+    </div>
+
+    <div class="card">
+      <p><strong>University Name</strong> – MSc in Something</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: roxane.cohen@sfr.fr</p>
+    <p>GitHub: <a href="https://github.com/roxanecohen">roxanecohen</a></p>
+    <p>LinkedIn:  <a href="https://www.linkedin.com/in/roxane-cohen-989b261a3/>roxanecohen</a></p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Roxane Cohen</p>
+  </footer>
+
 </body>
 </html>
