@@ -83,6 +83,37 @@
     background-color: rgba(56, 189, 248, 0.3);
     padding: 2px 6px;
     border-radius: 4px;
+
+    .tag {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 4px 8px;
+    margin: 3px 5px 3px 0;
+    border-radius: 999px;
+    font-size: 0.75em;
+    font-weight: 500;
+    border: 1px solid #38bdf8;
+}
+    .tag-blue {
+  background-color: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+    .tag-green {
+      background-color: rgba(34, 197, 94, 0.2);
+      color: #22c55e;
+    }
+    
+    .tag-purple {
+      background-color: rgba(167, 139, 250, 0.2);
+      color: #a78bfa;
+    }
+    
+    .tag-orange {
+      background-color: rgba(249, 115, 22, 0.2);
+      color: #f87171;
+    }
   }
     
   </style>
@@ -170,34 +201,45 @@
     <h2>Academic</h2>
 
     <div class="card">
+    <span class="tag tag-blue">Conference</span>
     <p><strong> ESANN 2026</strong> – <span class="highlight">Deobfuscation as a GNN-Based Graph-Edit Problem by Reinforcement Learning</span>. Roxane Cohen, Robin David, Samuel Hangouët, Florian Yger, Fabrice Rossi
-</p>
-  </div>
+    </p>
+    </div>
 
     <div class="card">
+    <span class="tag tag-green">PhD</span>
+    <p><strong> PhD defense - November 2025 </strong> – <span class="highlight">Analyzing binary programs and obfuscation with graph-based representations and machine learning
+    </span>. Thèse de doctorat dirigée par <a href="https://apiacoa.org/">Fabrice Rossi</a> (CEREMADE, Université Paris-Dauphine), co-encadrée par <a href="https://scholar.google.com/citations?user=NF_1_38AAAAJ&hl=en">Florian Yger</a> (LITIS - INSA Rouen), avec <a href="https://www.robindavid.fr/">Robin David</a>. (Quarkslab), avec le soutien de <a href="https://www.defense.gouv.fr/aid"> l'Agence Innovation Défense (AID)</a>.
+    </p>
+    </div>
+
+    <div class="card">
+    <span class="tag tag-blue">Conference</span>
     <p><strong> DIMVA 2025 </strong> – <span class="highlight">Experimental Study of Binary Diffing Resilience on Obfuscated Programs</span>. Roxane Cohen, Robin David, Riccardo Mori, Florian Yger, Fabrice Rossi
-</p>
+    </p>
     <a href="dimva_paper.pdf" class="btn">📄 Paper</a>
     <a href="dimva_slides.pdf" class="btn">📊 Slides</a>
     <a href="dimva_citation.bib" class="btn">📚 Citation</a>
     <a href="https://github.com/quarkslab/obfuscation_benchmark_code_artifacts" class="btn"> 💻 Code</a>
-  </div>
+    </div>
 
     <div class="card">
+    <span class="tag tag-purple">Journal</span>
     <p><strong> Applied Network Science 2025 (Journal) </strong> – <span class="highlight">Identifying Obfuscated Code Through Graph-Based Semantic Analysis of Binary Code (extended) </span>. Roxane Cohen, Robin David, Florian Yger, Fabrice Rossi
-</p>
+    </p>
     <a href="https://link.springer.com/article/10.1007/s41109-025-00733-8" class="btn">📄 Paper</a>
     <a href="ans_citation.bib" class="btn">📚 Citation</a>
-  </div>
+    </div>
     
     <div class="card">
+    <span class="tag tag-blue">Conference</span>
     <p><strong> ComplexNetwork 2024 </strong> – <span class="highlight">Identifying Obfuscated Code Through Graph-Based Semantic Analysis of Binary Code</span>. Roxane Cohen, Robin David, Florian Yger, Fabrice Rossi
-</p>
+    </p>
     <a href="https://link.springer.com/chapter/10.1007/978-3-031-82427-2_12" class="btn">📄 Paper</a>
     <a href="cc_slides.pdf" class="btn">📊 Slides</a>
     <a href="cc_citation.bib" class="btn">📚 Citation</a>
     <a href="https://github.com/quarkslab/obfuscation_benchmark_code_artifacts/tree/main/obfuscation_detection_artifacts/obfdetection" class="btn"> 💻 Code</a>
-  </div>
+    </div>
 
 </section>
 
@@ -206,6 +248,7 @@
     <h2>Talks</h2>
     
       <div class="card">
+      <span class="tag tag-blue">Conference</span>
       <p><strong> CAID 2024 </strong> –  <span class="highlight">Improving binary diffing through similarity and matching intricacie</span>. Roxane Cohen, Robin David, Riccardo Mori, Florian Yger, Fabrice Rossi
       </p>
       <a href="https://caid-conference.eu/wp-content/uploads/2025/01/CAID2024_27.pdf" class="btn">📄 Paper</a>
@@ -216,6 +259,7 @@
       </div>
   
     <div class="card">
+    <span class="tag tag-orange">Seminar</span>
     <p><strong> DefMal seminar - February 2025 </strong> – <span class="highlight">Tackling obfuscated code through variant analysis and Graph Neural Networks</span>. Roxane Cohen & Robin David
     </p>
     <a href="defmal_slides.pdf" class="btn">📊 Slides</a>
@@ -223,6 +267,7 @@
     </div>
   
     <div class="card">
+    <span class="tag tag-orange">Seminar</span>
     <p><strong> CEA LSL seminar - September 2024 </strong> – <span class="highlight">Tackling obfuscated code through variant analysis and Graph Neural Networks</span>. Roxane Cohen & Robin David
     </p>
     <a href="cea_slides.pdf" class="btn">📊 Slides</a>
@@ -230,6 +275,7 @@
     </div>
 
     <div class="card">
+    <span class="tag tag-blue">Conference</span>
     <p><strong> SSTIC 2024 </strong> –  <span class="highlight">QBinDiff: A modular differ to enhance binary diffing and graph alignment</span>. Roxane Cohen, Robin David, Riccardo Mori, Florian Yger, Fabrice Rossi
     </p>
     <a href="sstic_paper.pdf" class="btn">📄 Paper</a>
